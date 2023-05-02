@@ -1,5 +1,5 @@
 <?php
-    if(!defined('INDEX')) die("");
+if (!defined('INDEX')) die("");
 ?>
 
 <!-- jumbotron start -->
@@ -10,9 +10,9 @@
 </div>
 <!-- jumbotron end -->
 
-<?php 
-    $jml_mahasiswa = mysqli_num_rows(mysqli_query($con, "SELECT * FROM mahasiswa"));
-    $jml_jabatan = mysqli_num_rows(mysqli_query($con, "SELECT * FROM jabatan"));
+<?php
+$jml_mahasiswa = mysqli_num_rows(mysqli_query($con, "SELECT * FROM mahasiswa"));
+$jml_jabatan = mysqli_num_rows(mysqli_query($con, "SELECT * FROM jabatan"));
 ?>
 
 <!-- .row start -->
@@ -21,7 +21,7 @@
     <div class="col-sm-5 col-md-5 mb-3">
         <ul class="list-group">
             <li class="list-group-item text-danger">
-            <i class="fa-solid fa-users fs-1 me-2"></i>
+                <i class="fa-solid fa-users fs-1 me-2"></i>
                 <span class="display-3 float-right">
                     <?= $jml_mahasiswa ?>
                 </span>
@@ -36,7 +36,7 @@
     <div class="col-sm-4 col-md-5 mb-3">
         <ul class="list-group">
             <li class="list-group-item text-danger">
-            <i class="fa-solid fa-arrow-down-short-wide fs-1 me-2"></i>  
+                <i class="fa-solid fa-arrow-down-short-wide fs-1 me-2"></i>
                 <span class="display-3 float-right">
                     <?= $jml_jabatan ?>
                 </span>
