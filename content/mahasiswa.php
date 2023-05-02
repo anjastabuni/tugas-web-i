@@ -10,10 +10,12 @@
     <title>Data Mahasiswa</title>
 </head>
 <body>
-    <h2 class="judul">Data Mahasiswa</h2>
-    <a href="?hal=mahasiswa_tambah" class="tombol">Tambah</a>
+    <h4 class="mt-2">Data Mahasiswa</h4>
+    <a href="?hal=mahasiswa_tambah" class="btn btn-success">Tambah</a>
     
-    <table class="table">
+    <!-- table start -->
+    <div class="table-responsive mt-3">
+    <table class="table table-striped table-hover table-bordered">
         <thead>
             <tr>
                 <th>No</th>
@@ -43,8 +45,8 @@
                 <td><?= $data['nama_jabatan'] ?></td>
                 <td><?= $data['keterangan'] ?></td>
                 <td>
-                    <a href="?hal=mahasiswa_edit&id=<?= $data['id_mahasiswa'] ?>" class="tomboledit">Edit</a>
-                    <a href="?hal=mahasiswa_hapus&id=<?= $data['id_mahasiswa'] ?>&foto=<?= $data['foto'] ?>" class="tombolhapus">Hapus</a>
+                    <a href="?hal=mahasiswa_edit&id=<?= $data['id_mahasiswa'] ?>" class="btn btn-secondary">Edit</a>
+                    <a href="?hal=mahasiswa_hapus&id=<?= $data['id_mahasiswa'] ?>&foto=<?= $data['foto'] ?>" class="btn btn-danger">Hapus</a>
                 </td>
             </tr>
             <?php
@@ -52,6 +54,7 @@
             ?>
         </tbody>
     </table>
-
+    </div>
+    <!-- table end -->
 </body>
 </html>

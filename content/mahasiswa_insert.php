@@ -40,5 +40,5 @@ if($error != ""){
     echo "<meta http-equiv='refresh' content='1; url=?hal=mahasiswa'>";
 }else{
     echo "Tidak dapat menyimpan data <br>";
-    echo mysqli_error();
 }
+?>

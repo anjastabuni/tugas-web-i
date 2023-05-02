@@ -1,29 +1,40 @@
 <?php
 if (!defined('INDEX')) die("");
 ?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tambah mahasiswa</title>
-</head>
-<body>
-    <h2 class="judul">Tambah Mahasiswa</h2>
-    <form action="?hal=mahasiswa_insert" method="post" enctype="multipart/form-data">
-        <div class="form-group">
-            <label for="foto">Foto</label>
-            <div class="input"><input type="file" id="foto" name="foto"></div>
+    <h4 class="mt-2">Tambah Mahasiswa</h4>
+    <hr>
+    <form class="mb-5" action="?hal=mahasiswa_insert" method="post" enctype="multipart/form-data">
+        <!-- row start -->
+        <div class="form-group row">
+            <label for="foto" class="col-sm-2 col-form-label">Foto</label>
+            <div class="col-sm-4">
+                <div class="custom-file">
+                    <label for="foto" class="custom-file-label"></label>
+                    <input class="custom-file-input" type="file" id="foto" name="foto">
+                </div>
+            </div>
         </div>
-        <div class="form-group">
-            <label for="nama">Nama</label>
-            <div class="input"><input type="text" id="nama" name="nama"></div>
+        <!-- row end -->
+        <!-- row start -->
+        <div class="form-group row">
+            <label for="nama" class="col-sm-2 col-form-label">Nama</label>
+            <div class="col-sm-4">
+                <input class="form-control" type="text" id="nama" name="nama">
+            </div>
         </div>
-        <div class="form-group">
-            <label for="jk">Jenis Kelamin</label>
-            <input type="radio" id="jk" name="jk" value="L">Laki-Laki
-            <input type="radio" id="jk" name="jk" value="P">Perempuan
+        <!-- row end -->
+        <div class="form-group row">
+            <label for="jk" class="col-sm-2 col-form-label">Jenis Kelamin</label>
+            <div class="col-sm-4">
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input class="custom-control-input" type="radio" id="jkl" name="jk" value="L">
+                    <label class="custom-conntrol-label" for="jkl">Laki-Laki</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input class="custom-control-input" type="radio" id="jkp" name="jk" value="L">
+                    <label class="custom-conntrol-label" for="jkp">Perempuan</label>
+                </div>
+            </div>
         </div>
         <div class="form-group">
             <label for="tanggal">Tanggal</label>
@@ -49,9 +60,7 @@ if (!defined('INDEX')) die("");
             <div class="input"><textarea name="keterangan" id="keterangan" cols="3" rows="5" ></textarea></div>
         </div>
         <div class="form-group">
-            <input type="submit" value="Simpan" class="tomboledit">
-            <input type="reset" value="Batal" class="tombolhapus">
+            <input type="submit" value="Simpan" class="btn btn-primary">
+            <input type="reset" value="Batal" class="btn btn-danger">
         </div>
     </form>
-</body>
-</html>
