@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/dashboard.css" />
+  </head>
+  <body>
+    <header>Aplikasi Manajemen Pegawai</header>
+
+    <div class="container">
+      <aside>
+        <ul class="menu">
+          <li><a href="?hal=dashboard" class="aktif">Dashboard</a></li>
+          <li><a href="?hal=pegawai" class="aktif">Data Pegawai</a></li>
+          <li><a href="?hal=jabatan" class="aktif">Data Jabatan</a></li>
+          <li><a href="logout.php" class="aktif">Keluar</a></li>
+        </ul>
+      </aside>
+
+      <section class="main">
+        <h2 class="judul">Data Pegawai</h2>
+        <a class="tombol" href="form.php">Tambah</a>
+
+        <table class="table">
+          <thead>
+            <tr>
+              <th>No</th>
+              <th>Foto</th>
+              <th>Nama</th>
+              <th>Jenis Kelamin</th>
+              <th>Tangal Lahir</th>
+              <th>Jabatan</th>
+              <th>Keterangan</th>
+              <th>Aksi</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td><img src="image/foto1.jpg" alt="foto rebly" /></td>
+              <td>Rebly Megib Tabuni</td>
+              <td>L</td>
+              <td>25 Februari 2004</td>
+              <td>Ketua Angkatan</td>
+              <td>-</td>
+              <td>
+                <a class="tomboledit" href="#">Edit</a>
+                <a class="tombolhapus" href="#">Hapus</a>
+              </td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td><img src="image/foto3.jpg" alt="foto rebly" /></td>
+              <td>Anjas Tabuni</td>
+              <td>L</td>
+              <td>25 Februari 2004</td>
+              <td>Ketua Kelas</td>
+              <td>-</td>
+              <td>
+                <a class="tomboledit" href="#">Edit</a>
+                <a class="tombolhapus" href="#">Hapus</a>
+              </td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td><img src="image/foto2.jpg" alt="foto rebly" /></td>
+              <td>Mekal Tabuni</td>
+              <td>L</td>
+              <td>25 Februari 2004</td>
+              <td>Ketua Angkatan</td>
+              <td>-</td>
+              <td>
+                <a class="tomboledit" href="#">Edit</a>
+                <a class="tombolhapus" href="#">Hapus</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </div>
+    <div class="clear"></div>
+    <footer>Copyright &copy; Rebly Megib Tabuni</footer>
+  </body>
+</html>

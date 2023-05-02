@@ -1,0 +1,89 @@
+/*mengatur desain header*/
+header{
+    background: #038ade;
+    color: #fff;
+    padding: 15px 20px;
+    font-size: 20px;
+}
+
+/*mengatur lebar menu 20% dengan background hitam*/
+aside{
+    display: block;
+    flex: 20%;
+    background: #222;
+    width: 190px;
+    height: 560px;
+    float: left;
+    margin-right: 10px;
+    margin-top: -20px;
+}
+
+/*mengatur lebar konten utama 80% dengan background putih*/
+section.main{
+    flex: 80%;
+    background: #fff;
+    min-height: 530px;
+    padding: 15px 20px;
+}
+
+/* mengatur desain judul halaman dengan border dibawah */
+.judul{
+    color: #555;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 15px;
+}
+
+.nama{
+    margin: 20px 0;
+}
+.nama label{
+    display: block;
+    font-family: arial;
+    font-weight: bold;
+    float: left;
+    padding-right: 20%;
+}
+
+.nama input{
+
+    outline: 1px solid #222;
+    outline-offset: 10px
+    padding: 10px 10px;
+    width: 40%;
+    height : 20px;
+    padding: 10px 10px;
+}
+
+
+/* membuat tampilan form menumpuk pada layar kecil */
+@media (max-width: 700px) {
+    form-group label, .form-group input{
+        width: 100%;
+    }
+}
+
+
+/* navigasi */
+/* membuat padding tag <ul> */
+.menu{
+    padding: 0;
+}
+
+/* membuat border bawah tag <li> */
+.menu li{
+    border-bottom: 1px dotted #444;
+}
+
+/* mengatur desain menu yang dibuat dengan tag a */
+.menu a {
+    display: block;
+    padding: 20px 20px;
+    list-style: none;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* mengatur backgound menu ketika ditunjuk mouse */
+.menu a:hover{
+    background: #000;
+}

@@ -1,0 +1,138 @@
+/*mengatur desain header*/
+header {
+  background: #038ade;
+  color: #fff;
+  padding: 15px 20px;
+  font-size: 20px;
+}
+
+/*mengatur lebar menu 20% dengan background hitam*/
+aside {
+  display: block;
+  flex: 20%;
+  background: #222;
+  width: 190px;
+  height: 560px;
+  float: left;
+  margin-right: 10px;
+}
+
+/*mengatur lebar konten utama 80% dengan background putih*/
+section.main {
+  flex: 80%;
+  background: #fff;
+  min-height: 530px;
+  padding: 15px 20px;
+}
+
+/* mengatur desain judul halaman dengan border dibawah */
+.judul {
+  color: #555;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 15px;
+}
+
+/* mengatur agar lebar tabel penuh dan antar border tidak memiliki jarak */
+.table {
+  width: 80%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+/* menambah border dan pandding pada sel tabel */
+.table th,
+.table td {
+  border: 1px solid #ccc;
+  padding-left: 10px;
+}
+
+/* mengatur background bagian judul */
+.table th {
+  background: #eee;
+}
+
+tbody tr td img {
+  width: 100px;
+  height: 95px;
+  padding: 10px 25px 10px 25px;
+  border-bottom-right-radius: 80px;
+  border-bottom-left-radius: 80px;
+  border-top-right-radius: 80px;
+}
+
+/* mengatur desain tombol yang dibuat dengan tag <a> */
+.tombol {
+  display: inline-block;
+  max-width: 150px;
+  padding: 15px 30px;
+  color: #fff;
+  text-decoration: none;
+  background: #038ade;
+  cursor: pointer;
+}
+
+/* desain tombol edit dan hapus agar lebih kecil */
+.tomboledit,
+.tombolhapus {
+  padding: 10px 15px;
+  font-size: 12px;
+  text-decoration: none;
+  color: #fff;
+}
+.tombolhapus {
+  background: #fc4c4c;
+}
+.tomboledit {
+  background: #038ade;
+}
+
+/* desain form-group */
+.form-group label {
+  font-size: 12px;
+  float: left;
+}
+
+/*membersikan float*/
+.clear {
+  clear: both;
+}
+
+/*mengatur footer dengan font abu abu dan tesk di tengah*/
+footer {
+  background: #ccc;
+  color: #555;
+  padding: 20px;
+  text-align: center;
+}
+
+/* mengatur layout pada layar kecil (responsive) */
+@media (max-width: 700px) {
+  .container {
+    flex-direction: column;
+  }
+}
+
+/* navigasi */
+/* membuat padding tag <ul> */
+.menu {
+  padding: 0;
+}
+
+/* membuat border bawah tag <li> */
+.menu li {
+  border-bottom: 1px dotted #444;
+}
+
+/* mengatur desain menu yang dibuat dengan tag a */
+.menu a {
+  display: block;
+  padding: 20px 20px;
+  list-style: none;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* mengatur backgound menu ketika ditunjuk mouse */
+.menu a:hover {
+  background: #000;
+}
