@@ -3,6 +3,7 @@ if (!defined('INDEX')) die("");
 ?>
 
 <h4 class="mt-2">Data Mahasiswa</h4>
+<hr>
 <a href="?hal=mahasiswa_tambah" class="btn btn-success"><i class="fa-solid fa-plus"></i> Tambah</a>
 
 <!-- table start -->
